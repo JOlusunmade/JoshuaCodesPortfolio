@@ -1,0 +1,172 @@
+/* body */
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("bg-intro-mobile.png");
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* main container */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  width: 80%;
+}
+
+/* left container */
+
+.header,
+.subHeading {
+  text-align: center;
+}
+
+.header {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.subHeading {
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 5%;
+}
+
+/* right container */
+
+.trial {
+  align-items: center;
+  background-color: #5e54a4;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.4rem rgb(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  font-size: 0.7rem;
+  height: 3.5rem;
+  justify-content: center;
+  margin-top: 8%;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem rgb(0, 0, 0, 0.2);
+  height: 22rem;
+  margin-top: 7%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  border-radius: 0.3rem;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0, 0.2);
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 15px;
+  width: 80%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #38cc8b;
+  border-color: white;
+  color: white;
+  margin-bottom: 0.5rem;
+  width: 84%;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+}
+
+.smallPrint {
+  font-size: 0.5rem;
+  margin-top: 5%;
+}
+
+.agreement {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.conditions {
+  color: hsl(0, 100%, 74%);
+}
+
+#errorFN,
+#errorLN,
+#errorEmail,
+#errorPassword {
+  font-size: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 83%;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+  /* body */
+
+  body {
+    background-image: url("bg-intro-desktop.png");
+    background-position: center;
+  }
+
+  /* container */
+  .container {
+    max-width: 1000px;
+  }
+
+  /* left container */
+
+  .left {
+    float: left;
+    width: 50%;
+  }
+
+  .header,
+  .subHeading {
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .header {
+    font-size: 2.2rem;
+    margin-top: 30vh;
+  }
+
+  .subHeading {
+    font-size: 0.7rem;
+    margin-top: 5%;
+  }
+
+  /* right container */
+
+  .right {
+    float: right;
+    width: 50%;
+  }
+
+  .trial {
+    margin-left: 10px;
+    margin-top: 18.5vh;
+  }
+
+  form {
+    margin-left: 5px;
+  }
+}

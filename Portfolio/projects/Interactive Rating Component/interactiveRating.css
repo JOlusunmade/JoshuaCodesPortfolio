@@ -1,0 +1,141 @@
+/* body */
+
+* body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* rating screen */
+
+.container {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  max-width: 450px;
+  min-width: 300px;
+  width: 90%;
+}
+
+.innerContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.star {
+  align-items: center;
+  background-color: hsla(214 27% 59% / 0.366);
+  border-radius: 50%;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 3rem;
+}
+
+.greeting {
+  color: hsl(0, 0%, 100%);
+  font-size: xx-large;
+  margin-bottom: 1.5rem;
+}
+
+.feedback,
+.ratings {
+  color: hsl(217, 12%, 63%);
+  font-size: large;
+  margin-bottom: 1.5rem;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers {
+  background-color: hsla(214, 20%, 34%, 0.366);
+  border-color: transparent;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+.numbers:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.numbers:active,
+.numbers:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+#errorMessage {
+  color: hsl(0, 0%, 100%);
+}
+
+button.submit {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 2rem 2rem 2rem 2rem;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+button.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* result screen */
+
+#resultScreen {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+#result {
+  background-color: hsla(214, 20%, 34%, 0.366);
+  border-radius: 2rem 2rem 2rem 2rem;
+  color: hsl(25, 97%, 53%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  width: 55%;
+}
+
+#thanks {
+  color: hsl(0, 0%, 100%);
+  font-size: xx-large;
+}
+
+#resultImage,
+#result,
+#thanks {
+  margin-bottom: 1.5rem;
+}
+
+#appreciation {
+  color: hsl(217, 12%, 63%);
+  padding-bottom: 4.5rem;
+}
+
+/* media queries */
+
+@media (min-width: 1500px) {
+  .container {
+    margin-top: 10%;
+  }
+}

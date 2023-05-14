@@ -1,0 +1,184 @@
+/* body */
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* main container */
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  max-width: 380px;
+  min-height: 70vh;
+  min-width: 340px;
+  padding-bottom: 30px;
+  width: 90%;
+}
+
+/* left container */
+
+.lftContainer {
+  display: none;
+}
+
+/* images for mobile */
+
+#mobileWoman {
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -6rem;
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+#mobileShadow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+}
+
+/* right container */
+
+.header {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.accordion {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 3px 0 3px 0;
+}
+
+.question::after {
+  content: url(./images/icon-arrow-down.svg);
+  float: right;
+}
+
+.active:after {
+  content: url(./images/icon-arrow-down.svg);
+  transform: rotate(180deg);
+}
+.question {
+  font-size: 0.9rem;
+}
+
+.answer {
+  color: hsl(240, 6%, 50%);
+  display: none;
+  font-size: 0.9rem;
+  padding: 8px 0 8px 0;
+}
+
+hr {
+  background-color: hsl(240, 5%, 91%);
+  border: none;
+  height: 0.5px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1100px) {
+  /* main container */
+
+  .bgContainer {
+    background-color: white;
+    border-radius: 25px;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    max-width: 1000px;
+    min-height: 750px;
+    min-width: 1000px;
+    width: 80%;
+  }
+
+  /* removing mobile images */
+
+  #mobileWoman {
+    display: none;
+  }
+
+  #mobileShadow {
+    display: none;
+  }
+
+  /* right container */
+
+  .container {
+    border-radius: 0 15px 15px 0;
+    float: right;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    min-height: 750px;
+    padding-bottom: 0;
+    width: 50%;
+  }
+
+  .header {
+    padding-top: 2.5rem;
+    text-align: left;
+  }
+
+  .accordion {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  hr {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  /* left container */
+
+  .lftContainer {
+    background-color: white;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position: bottom right;
+    border-radius: 15px 0 0 15px;
+    display: block;
+    float: left;
+    min-height: 750px;
+    width: 40%;
+  }
+
+  #womanOnline {
+    left: -75px;
+    position: relative;
+    top: 160px;
+    z-index: 1;
+  }
+
+  #box {
+    left: -100px;
+    position: relative;
+    top: -65px;
+    z-index: 2;
+  }
+}
